@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#2227B2 ;
+}
+header{
+    width: 100%;
+    height: 12vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 58%;
+}
+header a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    color: #2227B2;
+    font-size: 1.3rem;
+}
+main{
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    height: 87%;
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+.main-container h1{
+    text-align: center;
+    padding: 1rem;
+    height: 10%;
+    font-size: 1.1rem;
+    font-family: "Inika", serif;
+    text-decoration: underline;
+}
+.main-container p{
+    text-align: center;
+    padding: 1rem;
+}
+.main-container h2{
+    text-align: center;
+    padding: 1rem;
+    height: 10%;
+    font-size: 1.1rem;
+    font-family: "Inika", serif;
+    text-decoration: underline;
+}
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    
+    overflow-y: scroll;
+}
+.chat-container::-webkit-scrollbar{
+    display: none;
+}
+.chat-box{
+    padding:.3rem 1rem;
+    margin: .1rem;
+}
+.message{
+    padding: 1rem;
+    background-color: #2227B2;
+    color: #FFFFFF;
+    display: block;
+    border-radius: 5px;
+    max-width: 37vw;
+    overflow-wrap: break-word;
+}
+.left-chat{
+    margin-right: auto;
+} 
+.right-chat{
+   margin-left: auto;
+}
+.message-input{
+    width: 100%;
+    margin-top: auto;
+    height: 10%;
+}
+.message-input form{
+    height: 100%;
+    display: flex;
+}
+.message-input form textarea{
+   width: 85%;
+   padding: 1rem;
+   background-color: #D9D9D9;
+   font-size: .9.4rem;
+   height: 100%;
+   border: none;
+   outline: none;
+   resize: none;
+   white-space: pre-wrap;
+}
+.message-input form textarea::-webkit-scrollbar{
+    display: none;
+}
+.message-input form button{
+    width: 15%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #00bf63;
+}
+.chatnow{
+    color: #00bf63;
+    font-size: 1.4rem;
+}
+footer{
+    height: 4vh;
+    background-color: #D9D9D9;
+    text-align: center;
+    padding: 6px 0;
+}
+.about-container{
+    overflow-y: scroll;
+    padding: 1rem;
+}
+.about-container::-webkit-scrollbar{
+    display: none;
+}
+.about-container ul{
+    padding: 1rem;
+}
+.about-container p a{
+    color: red;
+}
+
+@media only screen and (max-width: 468px) {
+    .main-container{
+        width: 90%;
+    }
+    header a{
+    font-size: 1rem;
+    white-space: nowrap;; 
+    }
+    .logo img{
+        width: 55%;
+    }
+    /* .message-input form textarea:focus{
+        position: fixed;
+        top:50px;
+
+    } */
+  }
