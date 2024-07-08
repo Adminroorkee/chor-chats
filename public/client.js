@@ -61,6 +61,13 @@ socket.on("message",(msg)=>{
     playmusic();
     appendMessage(msg,"left-chat");
 })
+socket.on('redirect', (url) => {
+    console.log('Redirecting to:', url);
+    window.location.href = url;
+  });
+
+  
+console.log(blockedIps);
 
 
 function scrollbottom(){
